@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js.assignment 3</title>
+</head>
+<script>
+    // <-------------1:city name-------->
+//     const city = prompt("Enter city name: ");
+
+// if (city.toLowerCase() === "karachi") {
+//     document.write("Welcome to the city of lights!");
+// }
+
+// <------------2:Good Morning Message--------->
+// const gender = prompt("Enter your gender (male/female):");
+
+// if (gender.toLowerCase() === "male") {
+//     document.write("Good Morning Sir.");
+// } else if (gender.toLowerCase() === "female") {
+//     document.write("Good Morning Ma'am.");
+// } else {
+//     document.write("Unknown gender. Please enter 'male' or 'female'.");
+// }
+// <------------3:Fule reminder--------->
+// const remainingFuel = parseFloat(prompt("Enter the remaining fuel in your car (in litres):"));
+
+// if (remainingFuel < 0.25) {
+//    document.write("Please refill the fuel in your car.");
+// }
+// <------------4:--------->
+
+// var a = 4; 
+// if (++a === 5){ 
+// alert("given condition for variable a is true"); 
+// } 
+//  var b = 82; 
+// if (b++ === 83){ 
+// alert("given condition for variable b is true"); 
+// } 
+//  var c = 12; 
+// if (c++ === 13){ 
+// alert("condition 1 is true"); 
+// } 
+// if (c === 13){ 
+// alert("condition 2 is true"); 
+// } 
+// if (++c < 14){ 
+// alert("condition 3 is true"); 
+// } 
+// if(c === 14){ 
+// alert("condition 4 is true"); 
+// } 
+//  var materialCost = 20000; 
+// var laborCost = 2000; 
+// var totalCost = materialCost + laborCost; 
+// if (totalCost === laborCost + materialCost){ 
+// alert("The cost equals"); 
+// } 
+//  if (true){ 
+//  alert("True"); 
+// } if (false){ 
+// alert("False"); 
+//  if("car" < "cat"){ 
+// alert("car is smaller than cat"); 
+// } }
+// <------------5:--------->
+// const secretNumber = Math.floor(Math.random() * 10) + 1; 
+// const userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+// if (userGuess === secretNumber) {
+//     document.write("Bingo! Correct answer.");
+// } else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
+//     document.write("Close enough to the correct answer.");
+// } else {
+//     document.write("Sorry, incorrect guess. The secret number was: " + secretNumber);
+// }
+// <------------6:checkDivisibility--------->
+// function checkDivisibility() {
+//     const number = parseInt(document.getElementById("userNumber").value);
+
+//     if (number % 3 === 0) {
+//         document.getElementById("result").innerText = number + " is divisible by 3.";
+//     } else {
+//         document.getElementById("result").innerText = number + " is not divisible by 3.";
+//     }
+// }
+// <------------7: even or odd--------->
+// const inputNumber = parseInt(prompt("Enter a number to check if it is even or odd:"));
+
+// if (inputNumber % 2 === 0) {
+//     document.write(`${inputNumber} is an even number.`);
+// } else {
+//     document.write(`${inputNumber} is an odd number.`);
+// }
+// <------------2:--------->
+// const temperature = parseInt(prompt("Enter the temperature:"));
+
+// if (temperature > 40) {
+//     document.write("It is too hot outside.");
+// } else if (temperature > 30) {
+//     document.write("The Weather today is Normal.");
+// } else if (temperature > 20) {
+//     document.write("Today's Weather is cool.");
+// } else if (temperature > 10) {
+//     document.write("OMG! Today's weather is so Cool.");
+// } else {
+//     document.write("It is very cold outside.");
+// }
+// <------------2:--------->
+const firstNumber = parseFloat(prompt("Enter the first number:"));
+const secondNumber = parseFloat(prompt("Enter the second number:"));
+const operation = prompt("Enter the operation (+, -, *, /, %):");
+
+let result;
+
+if (operation === '+') {
+    result = firstNumber + secondNumber;
+} else if (operation === '-') {
+    result = firstNumber - secondNumber;
+} else if (operation === '*') {
+    result = firstNumber * secondNumber;
+} else if (operation === '/') {
+    if (secondNumber !== 0) {
+        result = firstNumber / secondNumber;
+    } else {
+        document.write("Error: Division by zero is not allowed.");
+    }
+} else if (operation === '%') {
+    result = firstNumber % secondNumber;
+} else {
+   document.write("Invalid operation. Please enter a valid operation symbol.");
+}
+
+if (result !== undefined) {
+    document.write(`The result of ${firstNumber} ${operation} ${secondNumber} is: ${result}`);
+}
+</script>
+<body>
+    <!-- <-------------6:checkDivisibility---------->
+    <!-- <h1>Divisibility Check</h1>
+
+    <p>Enter a number to check if it is divisible by 3:</p>
+    <input type="number" id="userNumber">
+    <button onclick="checkDivisibility()">Check Divisibility</button>
+    
+    <p id="result"></p> -->
+     
+</body>
+</html>
